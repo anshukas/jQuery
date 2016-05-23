@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Example 1</title>
+<script type="text/javascript">
+    window.onload = function ()
+    {
+        // For all modern browsers
+        if (document.addEventListener)
+        {
+            document.getElementById('button1')
+                    .addEventListener('click', clickHandler, false);
+        }
+        else
+        // For Internet Explorer < 9
+        {
+            document.getElementById('button1')
+                    .attachEvent('onclick', clickHandler);
+        }
+
+        function clickHandler()
+        {
+            alert('Hello jQuery!!');
+        }
+    };
+</script>
+</head>
+<body>
+	<input type="button" id="button1" value="Click Me!"/>
+</body>
+</html>
